@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bookmark Manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bookmark Manager</h1>
+      <form id="bookmark-form">
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url" required />
+        </div>
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div class="form-group">
+          <label for="folder">Folder:</label>
+          <input type="text" id="folder" name="folder" />
+        </div>
+        <button type="submit">Add Bookmark</button>
+      </form>
+      <hr />
+      <h2>My Bookmarks</h2>
+      <div class="bookmarks"></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
